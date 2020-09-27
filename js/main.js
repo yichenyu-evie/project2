@@ -184,13 +184,6 @@ function animate_progressbar10()
 
 
 //
-var imgArray = new Array();
-
-imgArray[0] = new Image();
-imgArray[0].src = 'images/img/Splash_image1.jpg';
-
-imgArray[1] = new Image();
-imgArray[1].src = 'images/img/Splash_image2.jpg';
 
 new jBox('Tooltip', {
   attach: '.tooltips',

@@ -64,6 +64,8 @@ body {
 
 
 <!--custom-->
+
+/*slide*/
 #carbon-blcok {
     margin-top: 30px;
 }
@@ -92,7 +94,7 @@ body {
 #slide_05 {
     background-color: #fc9936;
 }
-
+/*thumb*/
 .thumb01 {
     background-image: url("../assets/rscfold.png");
 }
@@ -112,7 +114,7 @@ body {
 .thumb05 {
     background-image: url("../assets/rexoticsh.png");
 }
-
+/*text*/
 .topheader {
     background-color: #333;
     padding-bottom: 0px;
@@ -136,7 +138,7 @@ body {
     width: 240.8px;
 }
 
-
+/*quiz*/
 .quiz-body { 
     min-height: 100vh;
      background-color: #55c1c1;
@@ -151,7 +153,7 @@ body {
     text-align: center; 
 }
 
-/*circular progress bar*/
+/*progress bar*/
 
 #wrapper
 {
@@ -161,7 +163,7 @@ body {
  
 }
 
-#progressbar_wrapper
+.progressbar_wrapper
 {
  background-color: rgb(255, 255, 255, 0.5);
  
@@ -264,9 +266,10 @@ body {
  
 }
 
-#progressbar_div input[type="button"]
+/*
+#progressbar_div1
 {
- background-color:;
+
  border:none;
  width:150px;
  height:40px;
@@ -274,6 +277,18 @@ body {
  border-radius:15px;
  
 }
+
+#progressbar_div2
+{
+ 
+ border:none;
+ width:150px;
+ height:40px;
+ color:white;
+ border-radius:15px;
+ 
+}
+*/
 
 .cusbut {
     border-color: transparent;
@@ -302,52 +317,8 @@ button:focus {
 
 
 
-///
-.tested {
-    overflow: hidden;
-    position: relative;
-}
-.come-in {
-  transform: translateY(150px);
-  animation: come-in 0.8s ease forwards;
-}
-.come-in:nth-child(odd) {
-  animation-duration: 0.6s;
-}
-.already-visible {
-  transform: translateY(0);
-  animation: none;
-}
 
-/*
-@keyframes come-in {
-  to { transform: translateY(0); }
-}
-
-.textflide { 
-    animation: fadeInAnimation ease 3s; 
-    animation-iteration-count: 1; 
-    animation-fill-mode: forwards; 
-} 
-
-.stext2 { 
-    animation: fadeInAnimation ease 3s; 
-    animation-iteration-count: 1; 
-    animation-fill-mode: forwards; 
-} 
-
-@keyframes fadeInAnimation { 
-    0% { 
-        opacity: 0; 
-        transform: translateX(100px);
-    } 
-    100% { 
-        opacity: 1; 
-        transform: translateX(0);
-    } 
-} 
-*/
-//////
+/*paws*/
 .paws {
     height: 100px;
     width: 20px;
