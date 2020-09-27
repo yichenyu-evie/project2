@@ -1,0 +1,427 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>jQuery Split.js: Split Carousel Slider Examples</title>
+<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="splitslider/split.css" />
+<style>
+  @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Lato", sans-serif;
+}
+body .page-title,
+html .page-title {
+  text-align: center;
+  padding: 2em 0;
+  margin: 0;
+}
+body a,
+html a {
+  text-decoration: none;
+}
+body section,
+html section {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+body section::before, body section::after,
+html section::before,
+html section::after {
+  content: "";
+  display: table;
+}
+body section::after,
+html section::after {
+  clear: both;
+}
+h1,h2 { text-align: center; }
+h1 { margin-top: 150px; }
+body,
+html {
+  background-color: #efefef;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.myCarousel {
+  position: relative;
+  background-color: #fafafa;
+}
+.myCarousel .slides-wrapper .slides {
+  position: absolute;
+}
+.myCarousel .slides-wrapper .slides.content {
+  height: 60%;
+  width: 45%;
+  top: 10%;
+  left: 0;
+}
+.myCarousel .slides-wrapper .slides.content .bodytext {
+  padding: 0 50px;
+  position: relative;
+  top: 45%;
+  transform: translateY(-50%);
+}
+.myCarousel .slides-wrapper .slides.content .title {
+  font-size: 3.5em;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.myCarousel .slides-wrapper .slides.content .subtitle {
+  font-size: 1em;
+  line-height: 1.5;
+}
+.myCarousel .slides-wrapper .slides.photo {
+  height: 100%;
+  width: 55%;
+  top: 0;
+  right: 0;
+}
+.myCarousel .slides-wrapper .slides.photo .image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.myCarousel .slides-wrapper .slides.title {
+  height: 20%;
+  width: 55%;
+  bottom: 0;
+  left: 0;
+}
+.myCarousel .slides-wrapper .slides.title .bodytext {
+  padding: 0 50px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.myCarousel .slides-wrapper .slides.title .title {
+  margin: 0;
+  color: #fff;
+  margin-bottom: 5px;
+  font-family: serif;
+  font-size: 2.25em;
+  letter-spacing: 1px;
+}
+.myCarousel .slides-wrapper .slides.title .link {
+  position: relative;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.65em;
+  letter-spacing: 2px;
+  margin-left: 3px;
+}
+.myCarousel .slides-wrapper .slides.title .link:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: -15px;
+  width: 7px;
+  height: 7px;
+  transform: rotate(45deg);
+  border: 1px solid;
+  border-left: 0;
+  border-bottom: 0;
+  transition: right 0.3s;
+}
+.myCarousel .slides-wrapper .slides.title .link:hover span {
+  opacity: 0.5;
+}
+.myCarousel .slides-wrapper .slides.title .link:hover:after {
+  right: -18px;
+}
+.myCarousel .slides-wrapper .slides.title .red {
+  background-color: lightyellow;
+}
+.myCarousel .slides-wrapper .slides.title .red .title,
+.myCarousel .slides-wrapper .slides.title .red .link {
+  color: #333;
+}
+.myCarousel .slides-wrapper .slides.title .blue {
+  background-color: lightblue;
+}
+.myCarousel .slides-wrapper .slides.title .green {
+  background-color: lightpink;
+}
+.myCarousel .slides-wrapper .slides.price {
+  height: 20%;
+  width: 25%;
+  bottom: 0;
+  left: 55%;
+  background-color: #333;
+}
+.myCarousel .slides-wrapper .slides.price > * {
+  transition-delay: 0.2s;
+}
+.myCarousel .slides-wrapper .slides.price .bodytext {
+  padding: 0 50px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.myCarousel .slides-wrapper .slides.price .bodytext span {
+  display: block;
+  color: #fff;
+}
+.myCarousel .slides-wrapper .slides.price .bodytext .title {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.myCarousel .slides-wrapper .slides.price .bodytext .title.red {
+  color: lightyellow;
+}
+.myCarousel .slides-wrapper .slides.price .bodytext .title.blue {
+  color: lightblue;
+}
+.myCarousel .slides-wrapper .slides.price .bodytext .title.green {
+  color: lightpink;
+}
+.myCarousel .slides-wrapper .slides.price .bodytext .label {
+  font-size: 2em;
+}
+.myCarousel .slides-wrapper .slides.counter {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+  font-size: 12px;
+}
+.myCarousel .slides-wrapper .counter-content {
+  position: absolute;
+  top: 40%;
+  margin-top: 50px;
+  right: 0;
+  width: 50px;
+  background-color: #333;
+}
+.myCarousel .slides-wrapper .counter-content hr {
+  position: relative;
+  display: block;
+  transform: rotate(-45deg);
+  width: 20px;
+}
+.myCarousel .slides-wrapper .counter-content span {
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 12px;
+}
+.myCarousel #arrows {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 0 0 50px;
+}
+.myCarousel #arrows span {
+  margin: 0 10px;
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 1;
+  font-weight: bold;
+}
+.myCarousel #arrows .prev,
+.myCarousel #arrows .next {
+  width: auto;
+  height: auto;
+  border: none !important;
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 1;
+  font-weight: bold;
+  color: #000;
+}
+.myCarousel #arrows .prev.disable,
+.myCarousel #arrows .next.disable {
+  display: none;
+}
+.myCarousel #arrows .prev:hover,
+.myCarousel #arrows .next:hover {
+  opacity: 0.5;
+}
+
+</style>
+</head>
+
+<body><div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="https://www.jqueryscript.net/slider/split-carousel.html">Download This Plugin</a></li>
+<li><a href="https://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul><div id="carbon-block"></div>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="https://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+  <h1>jQuery Split.js: Split Carousel Slider Examples</h1>
+  <h2>Split slides and animate them individually</h2>
+      <section>
+      <div class="split myCarousel">
+        <div class="inner-wrapper">
+          <div class="slides-wrapper">
+            <div class="slides content">
+              <div class="slide">
+                <div class="bodytext">
+                  <h2 class="title">Velit aliqua excepteur</h2>
+                  <p class="subtitle">Sunt aliquip irure culpa laboris anim aliquip do dolor cillum id mollit adipisicing dolore elit in non cupidatat elit ad incididunt ullamco nostrud cupidatat esse ad excepteur quis nulla voluptate in.</p>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="bodytext">
+                  <h2 class="title">Qui voluptate in exer</h2>
+                  <p class="subtitle">Veniam fugiat quis quis eu sint deserunt aliquip duis laborum irure nostrud duis fugiat incididunt non officia elit voluptate.</p>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="bodytext">
+                  <h2 class="title">Lorem ipsum ullamco</h2>
+                  <p class="subtitle">In est veniam officia nostrud nisi adipisicing excepteur dolor fugiat do deserunt proident aliquip aute id qui in et ut voluptate minim minim reprehenderit anim ut nisi ad ut anim cillum veniam excepteur consequat est anim pariatur enim laboris.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="slides photo">
+              <div class="slide">
+                <div class="image" style="background-image: url(https://www.jqueryscript.net/dummy/1.jpg);"></div>
+              </div>
+              <div class="slide">
+                <div class="image" style="background-image: url(https://www.jqueryscript.net/dummy/4.jpg);"></div>
+              </div>
+              <div class="slide">
+                <div class="image" style="background-image: url(https://www.jqueryscript.net/dummy/5.jpg);"></div>
+              </div>
+            </div>
+
+            <div class="slides title">
+              <div class="slide red">
+                <div class="bodytext ">
+                  <h2 class="title">Oceanview estate</h2>
+                  <a class="link" href="#"><span>View the estate</span></a>
+                </div>
+              </div>
+              <div class="slide blue">
+                <div class="bodytext ">
+                  <h2 class="title">Arizona dream</h2>
+                  <a class="link" href="#"><span>View the estate</span></a>
+                </div>
+              </div>
+              <div class="slide green">
+                <div class="bodytext ">
+                  <h2 class="title">Swimming pool estate</h2>
+                  <a class="link" href="#"><span>View the estate</span></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="slides price">
+              <div class="slide">
+                <div class="bodytext ">
+                  <span class="title red">Special price</span>
+                  <span class="label" href="#">$998,500</span>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="bodytext ">
+                  <span class="title blue">Special price</span>
+                  <span class="label" href="#">$1,112,500</span>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="bodytext ">
+                  <span class="title green">Special price</span>
+                  <span class="label" href="#">$889,750</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="slides counter">
+              <div class="slide">
+                <span>01</span>
+              </div>
+              <div class="slide">
+                <span>02</span>
+              </div>
+              <div class="slide">
+                <span>03</span>
+              </div>
+            </div>
+
+            <div class="counter-content">
+              <hr>
+              <span>03</span>
+            </div>
+          </div>
+
+          <div id="arrows" class="navigation-wrapper">
+            <a href="#" class="navigation-arrow prev">previous</a>
+            <span>.</span>
+            <a href="#" class="navigation-arrow next">next</a>
+          </div>
+        </div>
+      </div>
+    </section>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="splitslider/split.js"></script>
+<script>
+  $('.myCarousel').split({
+  theme: 'bottom-to-top-fade-out,bottom-to-top-zoom-in,bottom-to-top-fade-out,fade-in-out,fade-in-out',
+  delay: '50',
+  height: '600',
+  infinite: 'true'
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script>
+try {
+  fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+    return true;
+  }).catch(function(e) {
+    var carbonScript = document.createElement("script");
+    carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+    carbonScript.id = "_carbonads_js";
+    document.getElementById("carbon-block").appendChild(carbonScript);
+  });
+} catch (error) {
+  console.log(error);
+}
+</script>
+</body>
+</html>

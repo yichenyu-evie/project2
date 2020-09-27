@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Boogaloo', cursive;
+    
+}
+
+
+.dvd_fixed_slider { 
+    font-family: 'Reem Kufi', sans-serif;
+    letter-spacing: 0px;
+    font-style: normal; 
+}
+
+.slide_text .title { 
+     font-family: 'Boogaloo', cursive;
+    font-size: 36px; 
+    color: #fff; 
+    line-height: 2.8125rem; 
+    font-weight: 700; 
+}
+
+.slide_text .description { 
+    font-size: 1.1rem; 
+    color: #fff; 
+    line-height: 1.75; 
+    font-weight: 300; 
+    margin-bottom: 20px; 
+}
+
+.slide_text .button { 
+    font-size: 17px; 
+    color: #fff; 
+    line-height: 1; 
+    font-weight: 400; 
+    background: rgb(0, 0, 0, 0.3); 
+}
+
+.slide_text .button { 
+    text-align: center; 
+    padding: 0px; 
+    display: inline-block; 
+}
+
+.slide_dots_wheel a { 
+    font-size: .87rem; 
+    color: #fff; 
+    line-height: 1.2em; 
+}
+
+.slide_dots_wheel a:first-child .slide_dot,
+.slide_dots_wheel a:hover       .slide_dot { 
+    background-color: #333; 
+}
+
+.slide_dots_wheel .slide_dot { 
+    background-color: #fff; 
+}
+
+
+<!--custom-->
+#carbon-blcok {
+    margin-top: 30px;
+}
+
+.testing {
+    margin-top: 30px;
+}
+
+
+#slide_01 {
+    background-color: #fc9936;
+}
+
+#slide_02 {
+    background-color: #55c1c1;
+}
+
+#slide_03 {
+    background-color: #ffcd52;
+}
+
+#slide_04 {
+    background-color: #f54b89;
+}
+
+#slide_05 {
+    background-color: #fc9936;
+}
+
+.thumb01 {
+    background-image: url("../assets/rscfold.png");
+}
+
+.thumb02 {
+    background-image: url("../assets/ramcurl.png");
+}
+
+.thumb03 {
+    background-image: url("../assets/rbritish.png");
+}
+
+.thumb04 {
+    background-image: url("../assets/rragdoll.png");
+}
+
+.thumb05 {
+    background-image: url("../assets/rexoticsh.png");
+}
+
+.topheader {
+    background-color: #333;
+    padding-bottom: 0px;
+}
+
+
+.headertitle {
+    color: white;
+    text-align: center;
+    font-size:75px;
+}
+
+.headersub {
+    color:white;
+    text-align: center;
+    font-size: 28px;
+}
+
+.titpic {
+    height: 100px;
+    width: 240.8px;
+}
+
+
+.quiz-body { 
+    min-height: 100vh;
+     background-color: #55c1c1;
+    
+}
+  
+.quiz-container {
+    margin: 50px auto 30px auto; 
+    max-width: 640px;}
+  
+.quiz-tit {
+    text-align: center; 
+}
+
+/*circular progress bar*/
+
+#wrapper
+{
+ margin:0 auto;
+ padding:0px;
+ text-align:center;
+ 
+}
+
+#progressbar_wrapper
+{
+ background-color: rgb(255, 255, 255, 0.5);
+ 
+ opacity:1;
+ margin-top:13px;
+ margin-bottom: 10px;
+ width: auto;
+ height:25px;
+ border-radius:15px;
+ overflow:hidden;
+}
+
+#progressbar1
+{
+ width:0px;
+ height:25px;
+ border-radius:10px;
+ background-color: white;
+ 
+}
+
+#progressbar2
+{
+ width:0px;
+ height:25px;
+ border-radius:15px;
+ background-color:white;
+ 
+}
+
+#progressbar3
+{
+ width:0px;
+ height:25px;
+ border-radius:15px;
+ background-color:white;
+ 
+}
+
+#progressbar4
+{
+ width:0px;
+ height:25px;
+ border-radius:15px;
+ background-color:white;
+ 
+}
+
+#progressbar5
+{
+ width:0px;
+ height:25px;
+ border-radius:15px;
+ background-color:white;
+ 
+}
+
+#progressbar6
+{
+ width:0px;
+ height:25px;
+ border-radius:15px;
+ background-color:white;
+ 
+}
+
+#progressbar7
+{
+ width:0px;
+ height:25px;
+ border-radius:15px;
+ background-color:white;
+ 
+}
+
+#progressbar8
+{
+ width:0px;
+ height:25px;
+ border-radius:15px;
+ background-color:white;
+ 
+}
+
+#progressbar9
+{
+ width:0px;
+ height:25px;
+ border-radius:15px;
+ background-color:white;
+ 
+}
+
+#progressbar10
+{
+ width:0px;
+ height:25px;
+ border-radius:15px;
+ background-color:white;
+ 
+}
+
+#progressbar_div input[type="button"]
+{
+ background-color:;
+ border:none;
+ width:150px;
+ height:40px;
+ color:white;
+ border-radius:15px;
+ 
+}
+
+.cusbut {
+    border-color: transparent;
+    border-radius: 20px;
+    border: 0;
+    padding: 0;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 10px
+}
+
+button:focus {
+    outline:0;
+}
+
+.bardiv {
+   padding-top: 10px;
+   padding-left: 10px;
+}
+
+.credit {
+    background-color: #333;
+    color:white;
+}
+
+
+
+///
+.tested {
+    overflow: hidden;
+    position: relative;
+}
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s;
+}
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+}
+
+/*
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
+
+.textflide { 
+    animation: fadeInAnimation ease 3s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+} 
+
+.stext2 { 
+    animation: fadeInAnimation ease 3s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+} 
+
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+        transform: translateX(100px);
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateX(0);
+    } 
+} 
+*/
+//////
+.paws {
+    height: 100px;
+    width: 20px;
+    
+}
+
+.paw1 {
+    animation: fadeInAnimation1 ease 2s; 
+    animation-iteration-count: infinite; 
+    animation-fill-mode: forwards; 
+    animation-duration: 5s;
+}
+
+.paw2 {
+    animation: fadeInAnimation2 ease 2s; 
+    animation-iteration-count: infinite; 
+    animation-fill-mode: forwards; 
+    animation-duration: 5s;
+}
+
+.paw3 {
+    animation: fadeInAnimation3 ease 2s; 
+    animation-iteration-count: infinite; 
+    animation-fill-mode: forwards; 
+    animation-duration: 5s;
+}
+
+.paw4 {
+    animation: fadeInAnimation4 ease 2s; 
+    animation-iteration-count: infinite; 
+    animation-fill-mode: forwards; 
+    animation-duration: 5s;
+}
+
+.pawrow {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.pawrow2 {
+    text-align: center;
+    margin-left: 100px;
+}
+
+.pawrow4 {
+    text-align: center;
+    
+}
+
+
+
+@keyframes fadeInAnimation1 { 
+    0% { 
+        opacity: 0; 
+        
+    } 
+    100% { 
+        opacity: 1; 
+        
+    } 
+} 
+
+@keyframes fadeInAnimation2 { 
+    0% { 
+        opacity: 0; 
+        
+    } 
+    25% { 
+        opacity: 0; 
+        
+    }
+    
+    100% { 
+        opacity: 1; 
+        
+    } 
+} 
+
+@keyframes fadeInAnimation3 { 
+    0% { 
+        opacity: 0; 
+        
+    } 
+    50% { 
+        opacity: 0; 
+        
+    }
+    
+    100% { 
+        opacity: 1; 
+        
+    } 
+} 
+
+@keyframes fadeInAnimation4 { 
+    0% { 
+        opacity: 0; 
+        
+    } 
+    75% { 
+        opacity: 0; 
+        
+    }
+    
+    100% { 
+        opacity: 1; 
+        
+    } 
+} 
